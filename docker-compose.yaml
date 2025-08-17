@@ -1,6 +1,6 @@
 services:
     app:
-      container_name: app
+      container_name: app_task
       build:
         dockerfile: Dockerfile
       command:
@@ -15,7 +15,7 @@ services:
 
     db:
       image: postgres:16.2
-      container_name: db
+      container_name: db_tasks
       restart: always
       env_file:
         - .template.env.docker
