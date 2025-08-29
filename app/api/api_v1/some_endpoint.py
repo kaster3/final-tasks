@@ -3,7 +3,7 @@ from fastapi import APIRouter
 from app.core import settings
 
 router = APIRouter(
-    prefix=settings.api.v1.endpoint,
+    prefix=settings.base_url.api.v1.endpoint,
     tags=["some_endpoint"],
 )
 

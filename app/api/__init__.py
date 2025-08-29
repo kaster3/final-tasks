@@ -4,7 +4,7 @@ from app.api.api_v1 import router as api_v1_router
 from app.core import settings
 
 router = APIRouter(
-    prefix=settings.api.prefix,
+    prefix=settings.base_url.api.prefix,
 )
 
 for rout in (api_v1_router,):

@@ -3,6 +3,7 @@ from typing import AsyncGenerator
 from dishka import Provider, Scope, from_context, provide
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.core.auth.jwt import JWTHelper
 from app.core.database.db_helper import DataBaseHelper
 from app.core.settings import Settings
 
